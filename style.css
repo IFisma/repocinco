@@ -2,19 +2,23 @@ body{
     background-color: seashell;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    height: 100vh;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .card{
     background-color: #ffffff;
     border:1px solid #e5e7eb;
     padding: 16px;
-    width: 320px;
-    margin: 0%;
+    width: 90%;
+    max-width: 320px;
     border-radius: 8px ;
     box-shadow: 0 6px 18px rgba(16,24,40,0.6);
-    
+    margin-bottom: 20px;
 }
 .links{
     background-color:beige ;
@@ -22,6 +26,19 @@ body{
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(16,24,40,0.6);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 320px;
+}
+.links img:hover{
+    transform: scale(1.1);
+}      
+@media (max-width: 350px){
+    .links img {
+        width: 35px;
+    }
 }
